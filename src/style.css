@@ -3,3 +3,31 @@
 body{
     background: white;
 }
+.card{
+
+
+    font-family: "Roboto", sans-serif; 
+    background-color: rgb(243, 243, 243);
+    width: 800px;
+    height: auto;
+
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+   
+body{
+  margin: 20px;
+}
+
+.card-header{
+  background-color: rgb(114, 179, 244);
+}
+
+.red-200 {  
+  background-color: #f1aeb5;
+
+  }
+
