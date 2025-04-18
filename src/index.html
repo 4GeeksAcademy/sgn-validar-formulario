@@ -20,10 +20,11 @@
     <div class="card">
         <h5 class="card-header">Payment form example</h5>
         <div class="card-body bg-light">
-            <div class="alert alert-danger" id="alertaDanger" role="alert">
-                Some fields are missing!
-            </div>
+            
             <form class="row g-3" id="myForm">
+                <div class="alert alert-danger" id="alertDanger" style="display: none;">
+                    Some fields are missing!
+                </div>
                 <div class="col-md-5">
                     <label for="inputCard" class="form-label">Card #</label>
                     <input type="number"  class="form-control" id="inputCard" placeholder="xxxxxxxxxxxx"  >

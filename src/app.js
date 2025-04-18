@@ -21,7 +21,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
 
 
   inputs.forEach(input => input.classList.remove("red-200"));
-  document.getElementById('alertaDanger').style.display = 'none';
+  document.getElementById('alertDanger').style.display = 'none';
 
   inputs.forEach(input => {  
       if (!input.value.trim()) { 
@@ -30,19 +30,14 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
       }  
   });  
 
- 
-  inputs.forEach(input=>{
-    if (!input.value.trim()){
-        input.classList.add("red-200");
-        allValid= false;
-    }
-  });
+
       
 if (allValid){
-    alert ('formulario enviado');
-    this.onsubmit();
+    if (alertDiv) {
+        alertDiv.style.display = 'block';
+      }
 }else{
-    document.getElementById('alertDnager').style.display= 'block';
+    document.getElementById('alertDanger').style.display= 'block';
 }
 });
 
